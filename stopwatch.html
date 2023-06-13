@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form>
+    <button type="button" id="btn">Секундомер</button>
+  </form>
+</body>
+
+<script>
+  const button = document.getElementById("btn");
+
+  let flag = false;
+  let timerId
+
+  function startStopWatch() {
+    flag = !flag;
+    if (flag === true) {
+      let numberOfTimer = 0;
+      timerId = setInterval(() => (numberOfTimer++, console.log(numberOfTimer)), 1000);
+    } else if (flag === false) {
+      clearInterval(timerId);
+    }
+  }
+
+  button.addEventListener("click", startStopWatch)
+</script>
+
+</html>
