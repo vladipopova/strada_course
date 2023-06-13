@@ -1,0 +1,40 @@
+.main_table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 600px;
+    height: 300px;
+}
+
+tr {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 300px;
+}
+
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    height: 60px;
+    width: 500px;
+}
+
+.shrift1 {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tabs-content {
+    overflow: hidden;
+}
+
+
+
+.tabs-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}

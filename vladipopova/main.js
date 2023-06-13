@@ -1,21 +1,15 @@
-// 5.	Создайте простую функцию калькулятор с именем сalc()
-// С тремя параметрами a и b, а также operation
-// Вызов сalc(‘add’, 1, 2) - возвращает 3
-// Вызов сalc(‘multi’, 1, 2) - возвращает 2
-// Вызов сalc(’subtract’, 3, 2) - возвращает 1
-
-
-function calc(operation, a, b) {
-    if (operation == "add") {
-        return (a + b);
-    }
-    else if (operation == "multi") {
-        return (a * b);
-    }
-    else {
-        return (a - b);
-    }
+function showVerticalMessage(word) {
+  let firstLetter = word.at(0)
+  if (firstLetter == "s" || firstLetter == "S") {
+    console.log("//S")
+  } else {
+    console.log("//" + firstLetter)
+  }
+  let i = 1
+  while (i < word.length && i < 6) {
+    console.log("//" + word.at(i));
+    i = i + 1
+  }
 }
 
-let m = calc("bhiiigy", 12, 6)
-console.log(m)
+showVerticalMessage("strada")
